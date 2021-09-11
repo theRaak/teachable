@@ -30,13 +30,29 @@
     <AppXManifest Include="C:\Users\Rocksan\OneDrive - UW\Documents\GitHub\theRaak\teachable\MyMediaCollection\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-09-11T14:29:26.511</Modified>
+      <Modified>2021-09-11T22:01:55.578</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\Rocksan\OneDrive - UW\Documents\GitHub\theRaak\teachable\MyMediaCollection\bin\x86\Debug\MyMediaCollection.exe">
       <PackagePath>entrypoint\MyMediaCollection.exe</PackagePath>
-      <Modified>2021-09-11T14:29:23.767</Modified>
+      <Modified>2021-09-11T22:01:54.819</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Rocksan\.nuget\packages\microsoft.bcl.asyncinterfaces\5.0.0\lib\netstandard2.0\Microsoft.Bcl.AsyncInterfaces.dll">
+      <PackagePath>Microsoft.Bcl.AsyncInterfaces.dll</PackagePath>
+      <Modified>2020-10-19T18:40:26.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Rocksan\.nuget\packages\microsoft.toolkit.mvvm\7.0.2\lib\netstandard2.0\Microsoft.Toolkit.Mvvm.dll">
+      <PackagePath>Microsoft.Toolkit.Mvvm.dll</PackagePath>
+      <Modified>2021-05-12T07:41:22.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x86.microsoft.netcore.universalwindowsplatform\6.2.12\runtimes\win10-x86\lib\uap10.0.15138\System.Runtime.dll">
+      <PackagePath>System.Runtime.dll</PackagePath>
+      <Modified>2021-02-05T06:15:46.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Rocksan\.nuget\packages\system.runtime.compilerservices.unsafe\4.5.3\lib\netstandard2.0\System.Runtime.CompilerServices.Unsafe.dll">
+      <PackagePath>System.Runtime.CompilerServices.Unsafe.dll</PackagePath>
+      <Modified>2020-02-19T10:05:16.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Rocksan\.nuget\packages\microsoft.windowsappsdk.foundation\1.0.0-experimental1\lib\uap10.0\Microsoft.ApplicationModel.Resources.winmd">
       <PackagePath>Microsoft.ApplicationModel.Resources.winmd</PackagePath>
@@ -94,10 +110,6 @@
       <PackagePath>Microsoft.Web.WebView2.Core.winmd</PackagePath>
       <Modified>2021-08-07T08:41:16.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x86.microsoft.netcore.universalwindowsplatform\6.2.12\runtimes\win10-x86\lib\uap10.0.15138\System.Runtime.dll">
-      <PackagePath>System.Runtime.dll</PackagePath>
-      <Modified>2021-02-05T06:15:46.000</Modified>
-    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.UniversalCRT.Debug\10.0.19041.0\Redist\Debug\x86\ucrtbased.dll">
       <PackagePath>ucrtbased.dll</PackagePath>
       <Modified>2020-12-02T09:59:30.000</Modified>
@@ -142,15 +154,15 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Rocksan\OneDrive - UW\Documents\GitHub\theRaak\teachable\MyMediaCollection\bin\x86\Debug\MyMediaCollection.xr.xml">
       <PackagePath>MyMediaCollection.xr.xml</PackagePath>
-      <Modified>2021-09-11T14:29:23.629</Modified>
+      <Modified>2021-09-11T21:47:09.169</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Rocksan\OneDrive - UW\Documents\GitHub\theRaak\teachable\MyMediaCollection\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2021-09-11T14:29:23.657</Modified>
+      <Modified>2021-09-11T21:47:09.191</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Rocksan\OneDrive - UW\Documents\GitHub\theRaak\teachable\MyMediaCollection\bin\x86\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2021-09-11T14:29:23.657</Modified>
+      <Modified>2021-09-11T22:00:27.121</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.19041.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -162,7 +174,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Rocksan\OneDrive - UW\Documents\GitHub\theRaak\teachable\MyMediaCollection\bin\x86\Debug\Core\MyMediaCollection.exe">
       <PackagePath>MyMediaCollection.exe</PackagePath>
-      <Modified>2021-09-11T14:29:26.499</Modified>
+      <Modified>2021-09-11T22:01:55.575</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

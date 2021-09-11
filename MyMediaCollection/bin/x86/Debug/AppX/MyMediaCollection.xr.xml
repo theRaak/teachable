@@ -13,15 +13,11 @@
       <RootProperty Name="Content" />
     </RootType>
     <RootType FullName="Microsoft.UI.Xaml.Markup.Compiler.DirectUI.ProxyTypes.ThemeResourceExtension" />
-    <RootType FullName="Microsoft.UI.Xaml.Controls.StackPanel">
-      <RootProperty Name="Orientation" />
-      <RootProperty Name="HorizontalAlignment" />
-      <RootProperty Name="VerticalAlignment" />
+    <RootType FullName="Microsoft.UI.Xaml.Controls.Grid">
       <RootProperty Name="Children" />
     </RootType>
-    <RootType FullName="Microsoft.UI.Xaml.Controls.Button">
-      <RootProperty Name="Content" />
-      <RootEvent Name="Click" />
+    <RootType FullName="Microsoft.UI.Xaml.Controls.TextBlock">
+      <RootProperty Name="Text" />
     </RootType>
     <RootType FullName="MyMediaCollection.MainPage" />
   </Roots.RootTypes>

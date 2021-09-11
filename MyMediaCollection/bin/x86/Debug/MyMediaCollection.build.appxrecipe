@@ -28,6 +28,18 @@
     <AppxPackagedFile Include="C:\Users\Rocksan\OneDrive - UW\Documents\GitHub\theRaak\teachable\MyMediaCollection\bin\x86\Debug\MyMediaCollection.exe">
       <PackagePath>entrypoint\MyMediaCollection.exe</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Rocksan\.nuget\packages\microsoft.bcl.asyncinterfaces\5.0.0\lib\netstandard2.0\Microsoft.Bcl.AsyncInterfaces.dll">
+      <PackagePath>Microsoft.Bcl.AsyncInterfaces.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Rocksan\.nuget\packages\microsoft.toolkit.mvvm\7.0.2\lib\netstandard2.0\Microsoft.Toolkit.Mvvm.dll">
+      <PackagePath>Microsoft.Toolkit.Mvvm.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x86.microsoft.netcore.universalwindowsplatform\6.2.12\runtimes\win10-x86\lib\uap10.0.15138\System.Runtime.dll">
+      <PackagePath>System.Runtime.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Rocksan\.nuget\packages\system.runtime.compilerservices.unsafe\4.5.3\lib\netstandard2.0\System.Runtime.CompilerServices.Unsafe.dll">
+      <PackagePath>System.Runtime.CompilerServices.Unsafe.dll</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Rocksan\.nuget\packages\microsoft.windowsappsdk.foundation\1.0.0-experimental1\lib\uap10.0\Microsoft.ApplicationModel.Resources.winmd">
       <PackagePath>Microsoft.ApplicationModel.Resources.winmd</PackagePath>
     </AppxPackagedFile>
@@ -69,9 +81,6 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Rocksan\.nuget\packages\microsoft.windowsappsdk.winui\1.0.0-experimental1\lib\uap10.0\Microsoft.Web.WebView2.Core.winmd">
       <PackagePath>Microsoft.Web.WebView2.Core.winmd</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x86.microsoft.netcore.universalwindowsplatform\6.2.12\runtimes\win10-x86\lib\uap10.0.15138\System.Runtime.dll">
-      <PackagePath>System.Runtime.dll</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.UniversalCRT.Debug\10.0.19041.0\Redist\Debug\x86\ucrtbased.dll">
       <PackagePath>ucrtbased.dll</PackagePath>

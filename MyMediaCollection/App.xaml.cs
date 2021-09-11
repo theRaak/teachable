@@ -32,7 +32,9 @@ namespace MyMediaCollection
         public App()
         {
             this.InitializeComponent();
+#pragma warning disable CS8305 // Type is for evaluation purposes only and is subject to change or removal in future updates.
             this.Suspending += OnSuspending;
+#pragma warning restore CS8305 // Type is for evaluation purposes only and is subject to change or removal in future updates.
         }
 
         /// <summary>

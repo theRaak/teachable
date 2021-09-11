@@ -43,6 +43,10 @@
               "target": "Package",
               "version": "[6.2.12, )"
             },
+            "Microsoft.Toolkit.Mvvm": {
+              "target": "Package",
+              "version": "[7.0.2, )"
+            },
             "Microsoft.WindowsAppSDK": {
               "target": "Package",
               "version": "[1.0.0-experimental1, )"

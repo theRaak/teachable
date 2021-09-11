@@ -69,3 +69,7 @@ C:\Users\Rocksan\OneDrive - UW\Documents\GitHub\theRaak\teachable\MyMediaCollect
 C:\Users\Rocksan\OneDrive - UW\Documents\GitHub\theRaak\teachable\MyMediaCollection\obj\x86\Debug\.winmd_cache\$Microsoft.Web.WebView2.Core.winmd_637639224760000000.json
 C:\Users\Rocksan\OneDrive - UW\Documents\GitHub\theRaak\teachable\MyMediaCollection\obj\x86\Debug\.winmd_cache\$Microsoft.Windows.AppLifecycle.winmd_637639224740000000.json
 C:\Users\Rocksan\OneDrive - UW\Documents\GitHub\theRaak\teachable\MyMediaCollection\obj\x86\Debug\.winmd_cache\$Microsoft.Windows.PushNotifications.winmd_637639224740000000.json
+C:\Users\Rocksan\OneDrive - UW\Documents\GitHub\theRaak\teachable\MyMediaCollection\bin\x86\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\Rocksan\OneDrive - UW\Documents\GitHub\theRaak\teachable\MyMediaCollection\bin\x86\Debug\Microsoft.Toolkit.Mvvm.dll
+C:\Users\Rocksan\OneDrive - UW\Documents\GitHub\theRaak\teachable\MyMediaCollection\bin\x86\Debug\Microsoft.Toolkit.Mvvm.pdb
+C:\Users\Rocksan\OneDrive - UW\Documents\GitHub\theRaak\teachable\MyMediaCollection\bin\x86\Debug\System.Runtime.CompilerServices.Unsafe.dll
