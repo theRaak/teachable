@@ -30,9 +30,17 @@ namespace MyMediaCollection
 		public MainPage()
         {
             this.InitializeComponent();
-			PopulateData();
+            ItemList.Loaded += ItemList_Loaded;
 		}
-		public void PopulateData()
+
+        private void ItemList_Loaded(object sender, RoutedEventArgs e)
+        {
+			var listView = (ListView)sender;
+			PopulateData();
+			listView.ItemsSource = _items;
+		}
+
+        public void PopulateData()
 		{
 			if (_isLoaded) return;
 			_isLoaded = true;
