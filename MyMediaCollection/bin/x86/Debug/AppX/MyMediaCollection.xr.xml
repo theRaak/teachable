@@ -22,11 +22,6 @@
       <RootMethod Name="GetColumn" />
       <RootMethod Name="SetColumn" />
     </RootType>
-    <RootType FullName="Microsoft.UI.Xaml.Controls.TextBlock">
-      <RootProperty Name="Text" />
-      <RootProperty Name="Margin" />
-      <RootProperty Name="FontWeight" />
-    </RootType>
     <RootType FullName="Microsoft.UI.Xaml.Controls.ListView">
       <RootProperty Name="HeaderTemplate" />
       <RootProperty Name="ItemTemplate" />
@@ -42,8 +37,23 @@
       <RootProperty Name="BorderThickness" />
       <RootProperty Name="Child" />
     </RootType>
+    <RootType FullName="Microsoft.UI.Xaml.Controls.TextBlock">
+      <RootProperty Name="Text" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="FontWeight" />
+      <RootProperty Name="VerticalAlignment" />
+    </RootType>
     <RootType FullName="Microsoft.UI.Xaml.Markup.Compiler.DirectUI.ProxyTypes.BindExtension">
       <RootProperty Name="Path" />
+    </RootType>
+    <RootType FullName="Microsoft.UI.Xaml.Controls.StackPanel">
+      <RootProperty Name="Orientation" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="Children" />
+    </RootType>
+    <RootType FullName="Microsoft.UI.Xaml.Controls.ComboBox">
+      <RootProperty Name="MinWidth" />
+      <RootProperty Name="Margin" />
     </RootType>
     <RootType FullName="Microsoft.UI.Xaml.Controls.RowDefinition">
       <RootProperty Name="Height" />

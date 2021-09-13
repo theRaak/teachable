@@ -27,13 +27,34 @@ namespace MyMediaCollection
     {
 		private IList<MediaItem> _items { get; set; }
 		private bool _isLoaded;
+		private IList<string> _mediums { get; set; }
+		private IList<MediaItem> _allItems { get; set; }
 		public MainPage()
         {
             this.InitializeComponent();
             ItemList.Loaded += ItemList_Loaded;
+			ItemFilter.Loaded += ItemFilter_Loaded;
+			Loaded += MainPage_Loaded;
 		}
-
-        private void ItemList_Loaded(object sender, RoutedEventArgs e)
+		private void MainPage_Loaded(object sender, Microsoft.UI.Xaml.RoutedEventArgs e)
+		{
+			ItemFilter.SelectionChanged += ItemFilter_SelectionChanged;
+		}
+		private void ItemFilter_SelectionChanged(object sender, Microsoft.UI.Xaml.Controls.SelectionChangedEventArgs e)
+		{
+			var updatedItems = (from item in _allItems where string.IsNullOrWhiteSpace(ItemFilter.SelectedValue.ToString()) ||
+			 ItemFilter.SelectedValue.ToString() == "All" ||
+			 ItemFilter.SelectedValue.ToString() == item.MediaType.ToString() select item).ToList();
+			ItemList.ItemsSource = updatedItems;
+		}
+		private void ItemFilter_Loaded(object sender, Microsoft.UI.Xaml.RoutedEventArgs e)
+		{
+			var filterCombo = (ComboBox)sender;
+			PopulateData();
+			filterCombo.ItemsSource = _mediums;
+			filterCombo.SelectedIndex = 0;
+		}
+		private void ItemList_Loaded(object sender, RoutedEventArgs e)
         {
 			var listView = (ListView)sender;
 			PopulateData();
@@ -66,6 +87,19 @@ namespace MyMediaCollection
 				MediumInfo = new Medium { Id = 3, MediaType = ItemType.Video, Name = "Blu Ray" }
 			};
 			_items = new List<MediaItem>
+			{
+				cd,
+				book,
+				bluRay
+			};
+			_mediums = new List<string>
+			{
+				"All",
+				nameof(ItemType.Book),
+				nameof(ItemType.Music),
+				nameof(ItemType.Video)
+			};
+			_allItems = new List<MediaItem>
 			{
 				cd,
 				book,
