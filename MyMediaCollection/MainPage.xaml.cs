@@ -14,6 +14,7 @@ using Microsoft.UI.Xaml.Media;
 using Microsoft.UI.Xaml.Navigation;
 using MyMediaCollection.Model;
 using MyMediaCollection.Enums;
+using Windows.UI.Popups;
 
 // To learn more about WinUI, the WinUI project structure,
 // and more about our project templates, see: http://aka.ms/winui-project-info.
@@ -105,6 +106,11 @@ namespace MyMediaCollection
 				book,
 				bluRay
 			};
+		}
+        private async void AddButton_Click(object sender, RoutedEventArgs e)
+		{
+			var dialog = new MessageDialog("Adding items to the collection is not yet available.", "My Media Collection");
+			await dialog.ShowAsync();
 		}
 	}
 }

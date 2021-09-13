@@ -13,7 +13,7 @@
             <TextBlock Text="Media Collection" Margin="4" FontWeight="Bold" VerticalAlignment="Center"/>
             <StackPanel Grid.Column="1" Orientation="Horizontal" HorizontalAlignment="Right">
                 <TextBlock Text="Media Type:" Margin="4" FontWeight="Bold" VerticalAlignment="Center"/>
-                <ComboBox x:ConnectionId='8' x:Name="ItemFilter" MinWidth="120" Margin="0,2,6,4"/>
+                <ComboBox x:ConnectionId='9' x:Name="ItemFilter" MinWidth="120" Margin="0,2,6,4"/>
             </StackPanel>
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*"/>
@@ -39,20 +39,22 @@
             </ListView.HeaderTemplate>
             <ListView.ItemTemplate>
                 <DataTemplate                             >
-                    <Grid x:ConnectionId='5'>
+                    <Grid x:ConnectionId='6'>
                         <Grid.ColumnDefinitions>
                             <ColumnDefinition Width="100"/>
                             <ColumnDefinition Width="*"/>
                         </Grid.ColumnDefinitions>
-                        <TextBlock x:ConnectionId='6'                                     />
-                        <TextBlock x:ConnectionId='7' Grid.Column="1"                          />
+                        <TextBlock x:ConnectionId='7'                                     />
+                        <TextBlock x:ConnectionId='8' Grid.Column="1"                          />
                     </Grid>
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>
+        <Button x:ConnectionId='3' Content="Add Item" HorizontalAlignment="Right" Grid.Row="2" Margin="8"                        />
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
     </Grid>
 </Page>

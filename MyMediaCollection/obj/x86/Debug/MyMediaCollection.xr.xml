@@ -26,6 +26,12 @@
       <RootProperty Name="HeaderTemplate" />
       <RootProperty Name="ItemTemplate" />
     </RootType>
+    <RootType FullName="Microsoft.UI.Xaml.Controls.Button">
+      <RootProperty Name="Content" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="Margin" />
+      <RootEvent Name="Click" />
+    </RootType>
     <RootType FullName="Microsoft.UI.Xaml.DataTemplate">
       <RootProperty Name="Template" />
     </RootType>
