@@ -224,7 +224,7 @@ namespace MyMediaCollection.MyMediaCollection_XamlTypeInfo
 
         private void InitTypeTables()
         {
-            _typeNameTable = new string[7];
+            _typeNameTable = new string[9];
             _typeNameTable[0] = "Microsoft.UI.Xaml.Controls.XamlControlsResources";
             _typeNameTable[1] = "Microsoft.UI.Xaml.ResourceDictionary";
             _typeNameTable[2] = "Object";
@@ -232,8 +232,10 @@ namespace MyMediaCollection.MyMediaCollection_XamlTypeInfo
             _typeNameTable[4] = "MyMediaCollection.MainPage";
             _typeNameTable[5] = "Microsoft.UI.Xaml.Controls.Page";
             _typeNameTable[6] = "Microsoft.UI.Xaml.Controls.UserControl";
+            _typeNameTable[7] = "MyMediaCollection.ViewModels.MainViewModel";
+            _typeNameTable[8] = "MyMediaCollection.ViewModels.BindableBase";
 
-            _typeTable = new global::System.Type[7];
+            _typeTable = new global::System.Type[9];
             _typeTable[0] = typeof(global::Microsoft.UI.Xaml.Controls.XamlControlsResources);
             _typeTable[1] = typeof(global::Microsoft.UI.Xaml.ResourceDictionary);
             _typeTable[2] = typeof(global::System.Object);
@@ -241,6 +243,8 @@ namespace MyMediaCollection.MyMediaCollection_XamlTypeInfo
             _typeTable[4] = typeof(global::MyMediaCollection.MainPage);
             _typeTable[5] = typeof(global::Microsoft.UI.Xaml.Controls.Page);
             _typeTable[6] = typeof(global::Microsoft.UI.Xaml.Controls.UserControl);
+            _typeTable[7] = typeof(global::MyMediaCollection.ViewModels.MainViewModel);
+            _typeTable[8] = typeof(global::MyMediaCollection.ViewModels.BindableBase);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -277,6 +281,8 @@ namespace MyMediaCollection.MyMediaCollection_XamlTypeInfo
 
         private object Activate_0_XamlControlsResources() { return new global::Microsoft.UI.Xaml.Controls.XamlControlsResources(); }
         private object Activate_4_MainPage() { return new global::MyMediaCollection.MainPage(); }
+        private object Activate_7_MainViewModel() { return new global::MyMediaCollection.ViewModels.MainViewModel(); }
+        private object Activate_8_BindableBase() { return new global::MyMediaCollection.ViewModels.BindableBase(); }
         private void MapAdd_0_XamlControlsResources(object instance, object key, object item)
         {
             var collection = (global::System.Collections.Generic.IDictionary<global::System.Object, global::System.Object>)instance;
@@ -318,6 +324,7 @@ namespace MyMediaCollection.MyMediaCollection_XamlTypeInfo
             case 4:   //  MyMediaCollection.MainPage
                 userType = new global::MyMediaCollection.MyMediaCollection_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Page"));
                 userType.Activator = Activate_4_MainPage;
+                userType.AddMemberName("ViewModel");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
@@ -328,6 +335,20 @@ namespace MyMediaCollection.MyMediaCollection_XamlTypeInfo
 
             case 6:   //  Microsoft.UI.Xaml.Controls.UserControl
                 xamlType = new global::MyMediaCollection.MyMediaCollection_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 7:   //  MyMediaCollection.ViewModels.MainViewModel
+                userType = new global::MyMediaCollection.MyMediaCollection_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("MyMediaCollection.ViewModels.BindableBase"));
+                userType.SetIsReturnTypeStub();
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 8:   //  MyMediaCollection.ViewModels.BindableBase
+                userType = new global::MyMediaCollection.MyMediaCollection_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
+                userType.Activator = Activate_8_BindableBase;
+                userType.SetIsLocalType();
+                xamlType = userType;
                 break;
             }
             return xamlType;
@@ -398,6 +419,11 @@ namespace MyMediaCollection.MyMediaCollection_XamlTypeInfo
             var that = (global::Microsoft.UI.Xaml.Controls.XamlControlsResources)instance;
             that.UseCompactResources = (global::System.Boolean)Value;
         }
+        private object get_1_MainPage_ViewModel(object instance)
+        {
+            var that = (global::MyMediaCollection.MainPage)instance;
+            return that.ViewModel;
+        }
 
         private global::Microsoft.UI.Xaml.Markup.IXamlMember CreateXamlMember(string longMemberName)
         {
@@ -412,6 +438,12 @@ namespace MyMediaCollection.MyMediaCollection_XamlTypeInfo
                 xamlMember.SetIsDependencyProperty();
                 xamlMember.Getter = get_0_XamlControlsResources_UseCompactResources;
                 xamlMember.Setter = set_0_XamlControlsResources_UseCompactResources;
+                break;
+            case "MyMediaCollection.MainPage.ViewModel":
+                userType = (global::MyMediaCollection.MyMediaCollection_XamlTypeInfo.XamlUserType)GetXamlTypeByName("MyMediaCollection.MainPage");
+                xamlMember = new global::MyMediaCollection.MyMediaCollection_XamlTypeInfo.XamlMember(this, "ViewModel", "MyMediaCollection.ViewModels.MainViewModel");
+                xamlMember.Getter = get_1_MainPage_ViewModel;
+                xamlMember.SetIsReadOnly();
                 break;
             }
             return xamlMember;
